@@ -6,8 +6,9 @@ import { Spacing } from 'components/spacing';
 import { Text } from 'components/text';
 
 import styles from './Article.module.scss';
+import { PageState } from 'src/index';
 
-export const Article = () => {
+export const Article = ({ pageState }: { pageState: PageState }) => {
 	return (
 		<article className={clsx(styles.article)}>
 			<Text as='h1' size={45} weight={800} uppercase dynamicLite>
